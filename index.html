@@ -1432,24 +1432,13 @@ function openAppNewTab() {
 // PROXIES — open in about:blank
 // ══════════════════════════════════════════════════════════
 const PROXIES = [
-    { name: "Ultraviolet", desc: "The most popular web proxy framework. Fast, reliable, broadly compatible.", tags: ["Fast","Popular"], url: "https://github.com/titaniumnetwork-dev/Ultraviolet" },
-    { name: "Rammerhead", desc: "Powerful proxy with session storage and cookie support for smooth browsing.", tags: ["Sessions","Cookies"], url: "https://github.com/binary-person/rammerhead" },
-    { name: "Corrosion", desc: "Simple and effective service worker based proxy. Quick setup.", tags: ["Lightweight","Easy"], url: "https://github.com/titaniumnetwork-dev/corrosion" },
+    { name: "fern", desc: "An organic, low-footprint proxy using a quiet node-branching architecture to bypass restrictions smoothly.", tags: ["Fast","Popular"], url: "https://s3.amazonaws.com/mathvc/index.html" },
+    { name: "Quasar", desc: "A high-energy unblocker built for extreme speeds, heavy data loads, and real-time metric tracking.", tags: ["High-Speed","Metrics"], url: "https://playernation.lucianmandru.ro/" },
+    { name: "PeteZah", desc: "A reliable, multi-layered routing framework that slices through firewalls for instant web access.", tags: ["Instant","Easy"], url: "https://cdn.jsdelivr.net/gh/Eraclio28/PeteZahStaticDone@main/new.svg" },
     { name: "Holy Unblocker", desc: "Feature-rich proxy with a polished UI and active community.", tags: ["UI","Community"], url: "https://holyubofficial.net/" },
     { name: "Interstellar", desc: "Sleek, modern unblocker with multiple backend proxy options.", tags: ["Modern","Multi-backend"], url: "https://interstellar.lol/" },
     { name: "Nebula Proxy", desc: "Clean, minimal proxy — fast loads with minimal overhead.", tags: ["Minimal","Fast"], url: "https://nebulaproxy.io/" },
 ];
-
-function openProxyInBlank(url) {
-    const w = window.open('about:blank', '_blank');
-    if (!w) { window.open(url, '_blank'); return; }
-    w.document.write(`<!DOCTYPE html><html><head><title>Loading...</title>
-    <style>*{margin:0;padding:0;box-sizing:border-box;}
-    html,body{height:100%;overflow:hidden;background:#000;}
-    iframe{width:100%;height:100%;border:none;display:block;}</style></head>
-    <body><iframe src="${url}" allowfullscreen allow="autoplay; fullscreen"></iframe></body></html>`);
-    w.document.close();
-}
 
 function renderProxies() {
     const grid = document.getElementById('proxy-grid');
