@@ -1702,7 +1702,7 @@ function closeTipsModal() {
 
 // Keyboard shortcuts
 document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { closeAnimePlayer(); closeMoviePlayer(); closeAI(); closeGameOverlay(); closeAppOverlay(); closeTipsModal(); }
+    if (e.key === 'Escape') { closeAnimePlayer(); closeMoviePlayer(); closeGameOverlay(); closeAppOverlay(); closeTipsModal(); }
     if (e.key.toLowerCase() === 'f' && document.getElementById('movie-overlay')?.classList.contains('open')) movieToggleFullscreen();
 });
 </script>
