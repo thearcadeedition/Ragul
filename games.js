@@ -138,7 +138,7 @@ const GAMES = [
     {
         title: "1 On 1 Tennis",
         file:  "1v1tennis.html",
-        img:   "1v1tennis.webp",
+        img:   "https://tcf.admeen.org/category/500/382/400x400/tennis.jpg",
         tags:  ["sports", "multiplayer"]
     },
     {
