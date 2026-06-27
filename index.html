@@ -1429,8 +1429,12 @@ function openAppNewTab() {
 }
 
 // ══════════════════════════════════════════════════════════
-// PROXIES — open in about:blank
+// PROXIES
 // ══════════════════════════════════════════════════════════
+function openProxyInBlank(url) {
+    window.open(url, '_blank');
+}
+
 const PROXIES = [
     { name: "fern", desc: "An organic, low-footprint proxy using a quiet node-branching architecture to bypass restrictions smoothly.", tags: ["Fast","Popular"], url: "https://s3.amazonaws.com/mathvc/index.html" },
     { name: "Quasar", desc: "A high-energy unblocker built for extreme speeds, heavy data loads, and real-time metric tracking.", tags: ["High-Speed","Metrics"], url: "https://playernation.lucianmandru.ro/" },
