@@ -64,6 +64,12 @@ const GAMES = [
         tags:  ["action"]
     },
     {
+        title: "Hollow Knight",
+        file:  "hollowknight.html",
+        img:   "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000003207/SQ_NSwitchDS_HollowKnight",
+        tags:  ["platformer", "action"]
+    },
+    {
         title: "99 Nights In The Forest",
         file:  "99nightsitf.html",
         img:   "99nightsitf.webp",
