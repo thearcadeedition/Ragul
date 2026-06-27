@@ -1471,11 +1471,8 @@ function renderProxies() {
 // AI — FULLSCREEN
 // ══════════════════════════════════════════════════════════
 function launchAI() {
-    const name = document.getElementById('ai-username').value.trim() || 'Agent';
     const fw = document.getElementById('ai-frame-wrap');
     fw.classList.add('open');
-    const base = document.getElementById('ai-frame').src.split('?')[0];
-    document.getElementById('ai-frame').src = `${base}?user=${encodeURIComponent(name)}`;
 }
 
 function closeAI() {
